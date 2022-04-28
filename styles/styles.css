@@ -1,0 +1,40 @@
+.galeria {
+    width: 290px;
+    height: 350px;
+    margin: 1em auto;
+    border: solid 1px green;
+    position: relative;
+}
+
+.galeria img {
+    width: 290px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+    position: relative;
+    top: 320px;
+    margin-left: 20px;
+}
+
+/*Relacion entre elementos hermanos input1 (~) img1 */
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+}
