@@ -1,25 +1,10 @@
-.galeria {
-    width: 290px;
-    height: 350px;
-    margin: 1em auto;
-    border: solid 1px green;
-    position: relative;
+section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.galeria img {
-    width: 290px;
-    height: 300px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 3s;
-}
-
-.galeria input[type=radio] {
-    position: relative;
-    top: 320px;
-    margin-left: 20px;
+img {
+    width: 300px;
 }
 
 /*Relacion entre elementos hermanos input1 (~) img1 */
